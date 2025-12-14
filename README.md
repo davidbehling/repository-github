@@ -11,7 +11,7 @@ Projeto desenvolvido para **consumo da API pública do GitHub**, com foco em **l
 O objetivo é **estudar integração com APIs REST**, organização de código frontend/backend e servir como **projeto de portfólio**.
 
 
-# 📌 Visão Geral
+## 📌 Visão Geral
 
 Funcionalidades principais:
 
@@ -27,7 +27,7 @@ Funcionalidades principais:
 💾 Persistência de repositórios favoritados
 ```
 
-# 🏗️ Arquitetura da Aplicação
+## 🏗️ Arquitetura da Aplicação
 
 Diagrama melhorado da arquitetura
 ```
@@ -74,7 +74,6 @@ Diagrama melhorado da arquitetura
 Fluxo simplificado da aplicação:
 
 ```
-
 Interface (UI)
 ↓
 Services (Integração com API GitHub)
@@ -82,16 +81,14 @@ Services (Integração com API GitHub)
 HTTP Client (Axios / Fetch)
 ↓
 GitHub API
-
 ```
 
 Essa separação facilita testes, manutenção e evolução do projeto.
 
 
-# 📂 Estrutura de Diretórios
+## 📂 Estrutura de Diretórios
 
 ```
-
 repository-github/
 ├── public/
 │   ├── favicon.ico                          Ícone da aplicação exibido na aba do navegador
@@ -136,14 +133,14 @@ repository-github/
 > Estrutura simples, clara e facilmente escalável.
 
 
-# 🔌 Integração com a API do GitHub
+## 🔌 Integração com a API do GitHub
 
-# Endpoint utilizado (exemplo)
+## Endpoint utilizado (exemplo)
 ```http
 GET https://api.github.com/users/{username}/repos
 ````
 
-# Exemplo de resposta
+## Exemplo de resposta
 
 ```json
 [
@@ -156,8 +153,7 @@ GET https://api.github.com/users/{username}/repos
 ]
 ```
 
-
-⚙️ **Tecnologias Utilizadas**
+## ⚙️ Tecnologias Utilizadas
 
 * **JavaScript (ES6+)**
 * **Axios** – requisições HTTP
@@ -168,33 +164,33 @@ GET https://api.github.com/users/{username}/repos
 * **Docker & Docker Compose**
 
 
-🚀 **Como Executar o Projeto**
+## 🚀 Como Executar o Projeto
 
-# Pré-requisitos
+### Pré-requisitos
 - Node.js **16+**
 - npm ou yarn
 - Docker e Docker Compose
 
-# Instalação
+### Instalação
 ```bash
 npm install
 # ou
 yarn install
 ````
 
-# Executar em ambiente de desenvolvimento
+### Executar em ambiente de desenvolvimento
 
 ```bash
 make docker
 ```
 
-# A aplicação estará disponível em:
+### A aplicação estará disponível em:
 
 ```
 http://localhost:3000
 ```
 
-# Pacotes:
+## 📦 Package / Pacotes
 
 - npm i react-router-dom
 
@@ -204,14 +200,14 @@ http://localhost:3000
 
 - npm i axios
 
-# Tela Inicial
+## 🖥️ Tela Inicial
 
 ![Tela Inicial](https://github.com/davidbehling/repository-github/blob/main/public/images/01_Tela_Inicial.png)
 
-# Tela Inicial com 1 item cadastrado e 1 item no input
+## 🖥️ Tela Inicial com 1 item cadastrado e 1 item no input
 
 ![Tela com lista](https://github.com/davidbehling/repository-github/blob/main/public/images/02_Lista_Repositorios.png)
 
-# Tela do perfil do usuário após clicar nos três riscos ao lado do repositório.
+## 🖥️ Tela do perfil do usuário após clicar nos três riscos ao lado do repositório.
 
 ![Tela de perfil](https://github.com/davidbehling/repository-github/blob/main/public/images/03_Tela_apos_clicar_no_icone_tres_riscos.png)
